@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/N0ktis/spellchecking.svg?branch=main)](https://travis-ci.org/github/N0ktis/spellchecking)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/N0ktis/spellchecking/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/N0ktis/spellchecking/)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/N0ktis/spellchecking/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/g/N0ktis/spellchecking/)
+
 
 # Spellchecking
 
