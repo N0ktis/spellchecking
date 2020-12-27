@@ -1,5 +1,7 @@
 # Spellchecking
 
+[Оригинал репозитория](https://bmstu.codes/a.zhurin/spellchecking)
+
 # Домашнее задание по АиСД
 #### Исполнитель: Журин Алексей ИУ8-52
 #### Telegram: @N0KT1S
