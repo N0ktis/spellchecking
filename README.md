@@ -6,12 +6,12 @@
 
 Данный репозиторий содержит отчёт по домашнему заданию
 ## Оглавление
-[Теоретическая часть](https://bmstu.codes/a.zhurin/spellchecking/-/blob/master/theory.md)
+[Теоретическая часть](https://github.com/N0ktis/spellchecking/blob/main/theory.md)
 
-[Описание программы](https://bmstu.codes/a.zhurin/spellchecking/-/blob/master/description.md)
+[Описание программы](https://github.com/N0ktis/spellchecking/blob/main/description.md)
 
-[Тестирование](https://bmstu.codes/a.zhurin/spellchecking/-/blob/master/tests.md)
+[Тестирование](https://github.com/N0ktis/spellchecking/blob/main/tests.md)
 
-[Запуск](https://bmstu.codes/a.zhurin/spellchecking/-/blob/master/launching.md)
+[Запуск](https://github.com/N0ktis/spellchecking/blob/main/launching.md)
 
-[Исходный код программы](https://bmstu.codes/a.zhurin/spellchecking/-/tree/master/source)
+[Исходный код программы](https://github.com/N0ktis/spellchecking/blob/main/source)
