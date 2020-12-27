@@ -18,31 +18,47 @@ logger_info.addHandler(info_logs)
 logger_error.addHandler(error_logs)
 
 
-def logger_decorator_maker(id=None):
-    def logger_decorator(fun):
-        @wraps(fun)
-        def wrapper(*args):
-            checked_value = None
-            try:
-                checked_value = fun(*args)
-            except TypeError as error:
-                logger_error.error(error.args[0])
-                raise TypeError(error.args[0])
-            except FileNotFoundError as error:
-                logger_error.error(error.args[1])
-            except Exception as error:
-                logger_error.error(error.args[0])
-            else:
-                if id == 'init':
-                    logger_info.info("Input dictionary processed successfully. Created BK-tree")
-                elif id == 'check word':
-                    logger_info.info("Word \"" + args[1] + "\" checked successfully")
-                elif id == 'check file':
-                    logger_info.info("All words checked and printed successfully")
-                elif id == 'print word result':
-                    logger_info.info("Word \"" + args[0] + "\" printed successfully")
-            return checked_value
 
-        return wrapper
+def proc_dict_logger_decorator(fun):
+    @wraps(fun)
+    def wrapper(*args):
+        logger_info.info("Input dictionary processed successfully. Created BK-tree")
+        return
 
-    return logger_decorator
+    return wrapper
+
+
+def check_word_logger_decorator(fun):
+    @wraps(fun)
+    def wrapper(*args):
+        logger_info.info("All words checked and printed successfully")
+        return
+
+    return wrapper
+
+
+def print_words_logger_decorator(fun):
+    @wraps(fun)
+    def wrapper(*args):
+        logger_info.info("Word \"" + args[0] + "\" printed successfully")
+        return
+
+    return wrapper
+
+
+def error_logger_decorator(fun):
+    @wraps(fun)
+    def wrapper(*args):
+        checked_value = None
+        try:
+            checked_value = fun(*args)
+        except TypeError as error:
+            logger_error.error(error.args[0])
+            raise TypeError(error.args[0])
+        except FileNotFoundError as error:
+            logger_error.error(error.args[1])
+        except Exception as error:
+            logger_error.error(error.args[0])
+        return checked_value
+
+    return wrapper
