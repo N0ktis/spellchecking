@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/N0ktis/spellchecking.svg?branch=main)](https://travis-ci.org/github/N0ktis/spellchecking)
+
 # Spellchecking
 
 [Оригинал репозитория](https://bmstu.codes/a.zhurin/spellchecking)
